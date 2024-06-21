@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import scriptkavilogo from "../../public/scriptkavi.png";
 const Header = () => {
   return (
     <>
@@ -13,12 +13,7 @@ const Header = () => {
               href="/"
             >
               <span className="sr-only">Home</span>
-              <Image
-                src="/scriptkavi.png"
-                width={50}
-                height={50}
-                alt="ScriptKavi"
-              />
+              <Image src={scriptkavilogo} width={50} alt="ScriptKavi" />
             </a>
           </div>
           <div
