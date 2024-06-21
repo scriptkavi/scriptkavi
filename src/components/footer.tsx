@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="max-w-4xl mx-auto">
       <footer className="h-32 flex items-center">
         <div className="flex items-center space-x-2 text-sm">
-          <Image src={scriptkavilogo} height={30} alt="ScriptKavi" />
+          <Image src={scriptkavilogo} height={20} alt="ScriptKavi" />
           <div>
             Crafted by{" "}
             <Link
