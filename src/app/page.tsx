@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { ProductsSection } from "@/components/products-section";
-import Link from "next/link";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
@@ -12,7 +10,7 @@ export default function Home() {
       </div>
       <main className="flex-1 overflow-auto">
         <h1 className="sr-only">scriptkavi.com</h1>
-        <div className="relative mb-4 flex items-center justify-center py-[20vh] pt-[18vh] text-gray-900 sm:pt-[26vh]">
+        <div className="relative mb-4 flex items-center justify-center py-[15vh] text-gray-900 ">
           <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
             <div className="relative mb-72 h-full w-full min-w-[29rem] max-w-[96rem] sm:mb-0"></div>
           </div>

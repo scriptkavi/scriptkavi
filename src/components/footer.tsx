@@ -34,7 +34,11 @@ const Footer = () => {
           </div>
           <div>
             The source code is available on{" "}
-            <Link href="#" className="border-b-2 border-black" target="_blank">
+            <Link
+              href="https://github.com/scriptkavi"
+              className="border-b-2 border-black"
+              target="_blank"
+            >
               Github.
             </Link>
           </div>

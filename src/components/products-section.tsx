@@ -1,3 +1,4 @@
+import { cn } from "@/utils/cn";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
   IconArrowWaveRightUp,
@@ -8,6 +9,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 export const ProductsSection = () => {
   return (
@@ -18,7 +20,7 @@ export const ProductsSection = () => {
             className=" font-semibold text-4xl tracking-tighter"
             data-main-heading="true"
           >
-            Products
+            Crafts
           </h2>
         </div>
       </div>
@@ -31,6 +33,7 @@ export const ProductsSection = () => {
             header={item.header}
             icon={item.icon}
             className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+            url={item.url}
           />
         ))}
       </BentoGrid>
@@ -38,26 +41,34 @@ export const ProductsSection = () => {
   );
 };
 
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+const Skeleton = ({ className }: { className?: string }) => (
+  <div
+    className={cn(
+      "flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100 bg-cover border",
+      className
+    )}
+  ></div>
 );
 const items = [
   {
     title: "VedVyas.io",
     description: "Where developers learn together.",
-    header: <Skeleton />,
+    header: <Skeleton className="bg-[url('/vedvyas.png')]" />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    url: "https://www.vedvyas.io",
   },
   {
     title: "LanTalk",
     description: "Chat with peers on local network.",
-    header: <Skeleton />,
+    header: <Skeleton className="bg-[url('/lantalk.png')]" />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    url: "https://github.com/scriptkavi/lantalk",
   },
   {
     title: "Quick",
     description: "Share files across devices in the same network.",
-    header: <Skeleton />,
+    header: <Skeleton className="bg-[url('/quick.png')]" />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    url: "https://github.com/scriptkavi/quick",
   },
 ];
