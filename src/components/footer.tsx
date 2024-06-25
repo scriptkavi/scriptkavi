@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             Crafted by{" "}
             <Link
-              href="https://www.linkedin.com/in/sunnynk19/"
+              href="https://x.com/scriptkavi"
               className="border-b-2 border-black"
               target="_blank"
             >
