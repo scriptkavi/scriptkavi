@@ -51,6 +51,16 @@ const Skeleton = ({ className }: { className?: string }) => (
 );
 const items = [
   {
+    title: "scriptkavi/hooks",
+    description:
+      "Empower your react project with accessible and customizable hooks. Copy paste the modern hooks and use them in your React or NextJS applications.",
+    header: (
+      <Skeleton className="bg-[url('https://raw.githubusercontent.com/scriptkavi/hooks/main/apps/www/public/og.jpg')]" />
+    ),
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    url: "https://hooks.scriptkavi.com",
+  },
+  {
     title: "VedVyas.io",
     description: "Where developers learn together.",
     header: <Skeleton className="bg-[url('/vedvyas.png')]" />,
