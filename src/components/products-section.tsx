@@ -74,11 +74,4 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     url: "https://github.com/scriptkavi/lantalk",
   },
-  {
-    title: "Quick",
-    description: "Share files across devices in the same network.",
-    header: <Skeleton className="bg-[url('/quick.png')]" />,
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-    url: "https://github.com/scriptkavi/quick",
-  },
 ];
